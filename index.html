@@ -4,32 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>RS Layout | Soluções em Carrinhos para Supermercados e Atacadistas</title>
-  <meta name="description" content="Manutenção de carrinhos, troca de rodízios, adequação de layout e montagem de gôndolas. Reduza custos, evite prejuízos e mantenha sua loja funcionando." />
+  <meta name="description" content="Especialistas em adequação de layouts e manutenção de equipamentos para lojas, supermercados e atacadistas." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" type="image/png" href="img/logo-sm.png" />
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-
   <header class="site-header" id="topo">
     <div class="container header-inner">
-      <a class="brand" href="#topo" aria-label="RS Layout & Solicitações em Carrinhos — início">
-        <img src="img/logo.webp" alt="RS Layout & Soluções em Carrinhos" class="brand-logo" width="72" height="72" />
+      <a class="brand" href="#topo" aria-label="RS Layout — início">
+        <img src="img/logo.webp" alt="" class="brand-logo" width="48" height="48" />
         <span class="brand-text">
-          <strong>RS Layout </strong>
-          <small>Soluções em Carrinhos</small>
+          <strong><span class="brand-rs"><span class="r">R</span><span class="s">S</span></span> Layout &amp; Soluções</strong>
+          <small>em carrinhos</small>
         </span>
       </a>
       <nav class="nav" id="nav" aria-label="Principal">
-        <a href="#impacto">Impacto</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#gestores">Para gestores</a>
-        <a href="#galeria">Galeria</a>
-        <a class="btn btn-primary btn-sm" href="#contato">Solicitar orçamento</a>
+        <a href="#topo" data-nav>Início</a>
+        <a href="#sobre" data-nav>Sobre nós</a>
+        <a href="#servicos" data-nav>Serviços</a>
+        <a href="#processo" data-nav>Como trabalhamos</a>
+        <a href="#contato" data-nav>Contato</a>
+        <a class="btn btn-primary btn-sm btn-header" href="#contato">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M7 2v2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2h-2V2h-2v2H9V2H7zm12 8H5v10h14V10z"/></svg>
+          Solicitar Orçamento
+        </a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -39,80 +40,139 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero">
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <img class="hero-logo" src="img/logo.webp" alt="RS Layout & Soluções em Carrinhos" width="140" height="140" />
-          <p class="eyebrow">
-            <span class="gold-line"></span>
-            Para supermercados, atacadistas e redes varejistas
-          </p>
-          <h1>Soluções que mantêm seu supermercado <span class="text-blue">funcionando</span>.</h1>
-          <p class="lead">
-            Manutenção de carrinhos, adequação de layouts e montagem de gôndolas para supermercados e atacadistas que buscam eficiência, segurança e redução de custos.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contato">Solicitar orçamento</a>
-            <a class="btn btn-secondary" href="#servicos">Conhecer os serviços</a>
-          </div>
-          <ul class="hero-pills" aria-label="Diferenciais">
-            <li>Menos prejuízo</li>
-            <li>Mais vida útil</li>
-            <li>Operação segura</li>
-          </ul>
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="img/hero-carts.jpg" alt="" width="1600" height="900" loading="eager" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="hero-eyebrow reveal">Experiência, qualidade e compromisso</p>
+        <h1 class="reveal">
+          Soluções completas para o<br />
+          <span class="text-red">seu negócio</span>
+        </h1>
+        <p class="hero-lead reveal">
+          Especialistas em adequação de layouts e manutenção de equipamentos para lojas, supermercados e atacadistas.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#contato">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M7 2v2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2h-2V2h-2v2H9V2H7zm12 8H5v10h14V10z"/></svg>
+            Solicitar orçamento
+          </a>
+          <a class="btn btn-ghost" href="#servicos">
+            Conheça nossos serviços
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
         </div>
-        <div class="hero-visual reveal" data-delay="120">
-          <div class="hero-frame">
-            <img src="img/hero-3d.jpg" alt="Composição 3D: carrinho, rodízio, ferramenta e gôndola com acabamento metálico azul" width="800" height="450" loading="eager" />
-          </div>
-        </div>
+
+        <ul class="hero-features reveal">
+          <li>
+            <span class="feat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-2.8 7.8-7 9-4.2-1.2-7-4.5-7-9V6l7-3z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <div>
+              <strong>Qualidade garantida</strong>
+              <span>Serviços com padrão de excelência</span>
+            </div>
+          </li>
+          <li>
+            <span class="feat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <div>
+              <strong>Atendimento ágil</strong>
+              <span>Equipes especializadas e prontas para atender</span>
+            </div>
+          </li>
+          <li>
+            <span class="feat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="16" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M4 19c1-3 3.2-4.5 5-4.5S13 16 14 19M14 19c.6-2 2-3.2 3.5-3.2S20.5 17.5 21 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <div>
+              <strong>Equipes especializadas</strong>
+              <span>Profissionais treinados e qualificados</span>
+            </div>
+          </li>
+          <li>
+            <span class="feat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 18V10l4 3 4-7 4 5 4-3v10H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <strong>Compromisso</strong>
+              <span>Soluções personalizadas para cada cliente</span>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- IMPACTO -->
-    <section class="section impact" id="impacto">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow"><span class="gold-line"></span> Seção de impacto</p>
-          <h2>Pequenos reparos evitam <span class="text-gold">grandes prejuízos</span>.</h2>
-          <p class="section-sub">
-            A manutenção preventiva reduz falhas, aumenta a durabilidade dos carrinhos e evita gastos desnecessários com substituições.
+    <!-- STATS -->
+    <section class="stats" aria-label="Números">
+      <div class="container stats-grid">
+        <article class="stat-item reveal">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.2" stroke="currentColor" stroke-width="1.7"/><path d="M5 19c1.2-3.5 3.8-5 7-5s5.8 1.5 7 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <strong data-count="500" data-prefix="+">+500</strong>
+            <span>Clientes atendidos</span>
+          </div>
+        </article>
+        <article class="stat-item reveal" data-delay="60">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 5h2l2.2 9.5h9.6L20 8H8" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="10" cy="19" r="1.5" fill="currentColor"/><circle cx="17" cy="19" r="1.5" fill="currentColor"/></svg>
+          </span>
+          <div>
+            <strong data-count="20000" data-prefix="+" data-format="dot">+20.000</strong>
+            <span>Carrinhos mantidos</span>
+          </div>
+        </article>
+        <article class="stat-item reveal" data-delay="120">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 18h16M6 18V9h4v9M14 18V6h4v12" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <strong data-count="3000" data-prefix="+" data-format="dot">+3.000</strong>
+            <span>Gôndolas montadas</span>
+          </div>
+        </article>
+        <article class="stat-item reveal" data-delay="180">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 12.5l2.2 2.2 4.8-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <strong data-count="10" data-prefix="+">+10</strong>
+            <span>Anos de experiência</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <p class="section-label">Sobre nós</p>
+          <h2>Compromisso com <span class="text-red">soluções inteligentes e eficientes</span></h2>
+          <p>
+            Nosso objetivo é entregar serviços de adequação de layout e manutenção de equipamentos com alto padrão para o varejo, unindo qualidade, segurança e agilidade em cada projeto.
           </p>
+          <p>
+            Atuamos para otimizar o espaço da loja, prolongar a vida útil dos carrinhos e melhorar a experiência de clientes e colaboradores no dia a dia da operação.
+          </p>
+          <a class="btn btn-primary" href="#processo">
+            Conheça nossa história
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
         </div>
-
-        <div class="compare-grid">
-          <article class="compare-card compare-bad reveal">
-            <div class="compare-top">
-              <span class="compare-status">Sem manutenção</span>
-              <div class="compare-icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M16 16l16 16M32 16L16 32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
-              </div>
-            </div>
-            <ul>
-              <li>Rodas travando</li>
-              <li>Carrinhos desalinhados</li>
-              <li>Ruídos durante o uso</li>
-              <li>Risco de acidentes</li>
-              <li>Gastos com substituição</li>
-            </ul>
-          </article>
-
-          <article class="compare-card compare-good reveal" data-delay="100">
-            <div class="compare-top">
-              <span class="compare-status">Com manutenção</span>
-              <div class="compare-icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M14 25l7 7 13-15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </div>
-            </div>
-            <ul>
-              <li>Carrinhos funcionando corretamente</li>
-              <li>Maior vida útil</li>
-              <li>Mais segurança</li>
-              <li>Melhor experiência para o cliente</li>
-              <li>Redução de custos</li>
-            </ul>
-          </article>
+        <div class="about-visual reveal" data-delay="100">
+          <div class="about-frame">
+            <img src="img/sobre-loja.jpg" alt="Setor de hortifruti organizado em supermercado" width="800" height="600" loading="lazy" />
+          </div>
+          <aside class="experience-badge">
+            <strong>+10</strong>
+            <span>Anos de experiência no mercado</span>
+          </aside>
         </div>
       </div>
     </section>
@@ -120,150 +180,115 @@
     <!-- SERVIÇOS -->
     <section class="section services" id="servicos">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow"><span class="gold-line"></span> Serviços especializados</p>
-          <h2>Soluções completas para a estrutura da sua loja</h2>
-          <p class="section-sub">
-            Atendimento orientado a gestores, gerentes e responsáveis pela manutenção de supermercados, atacadistas e centros de distribuição.
-          </p>
+        <div class="section-head center reveal">
+          <p class="section-label">Nossos serviços</p>
+          <h2>Soluções completas <span class="text-red">para o seu negócio</span></h2>
         </div>
-
         <div class="services-grid">
           <article class="service-card reveal">
-            <div class="service-num">01</div>
-            <h3>Manutenção preventiva de carrinhos</h3>
-            <p>Inspeção, ajuste e manutenção dos componentes para evitar falhas, acidentes e gastos com substituições.</p>
+            <div class="service-media">
+              <img src="img/galeria-layout.jpg" alt="Adequação de layout em supermercado" loading="lazy" width="400" height="260" />
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 20V10l8-6 8 6v10H4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 20v-6h4v6" stroke="currentColor" stroke-width="1.7"/></svg>
+              </span>
+            </div>
+            <h3>Adequação de Layouts</h3>
+            <p>Projetos personalizados para lojas, supermercados e atacadistas.</p>
+            <a class="service-link" href="#contato">Saiba mais <span aria-hidden="true">→</span></a>
           </article>
+
           <article class="service-card reveal" data-delay="60">
-            <div class="service-num">02</div>
-            <h3>Troca de rodízios</h3>
-            <p>Substituição de rodas e rodízios desgastados para recuperar a mobilidade, estabilidade e segurança dos carrinhos.</p>
+            <div class="service-media">
+              <img src="img/galeria-manutencao.jpg" alt="Manutenção preventiva de carrinhos" loading="lazy" width="400" height="260" />
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M3 5h2l2.2 9.5h9.6L20 8H8" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="10" cy="19" r="1.5" fill="currentColor"/><circle cx="17" cy="19" r="1.5" fill="currentColor"/></svg>
+              </span>
+            </div>
+            <h3>Manutenção Preventiva</h3>
+            <p>Mais segurança e durabilidade para seus carrinhos com nossa manutenção especializada.</p>
+            <a class="service-link" href="#contato">Saiba mais <span aria-hidden="true">→</span></a>
           </article>
+
+          <article class="service-card reveal" data-delay="120">
+            <div class="service-media">
+              <img src="img/galeria-rodizio.jpg" alt="Manutenção corretiva e troca de rodízios" loading="lazy" width="400" height="260" />
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M14.5 6.5l3 3M4 20l7.2-7.2a3.2 3.2 0 014.5-4.5L20 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+            </div>
+            <h3>Manutenção Corretiva</h3>
+            <p>Soluções rápidas e eficientes para garantir o perfeito funcionamento.</p>
+            <a class="service-link" href="#contato">Saiba mais <span aria-hidden="true">→</span></a>
+          </article>
+
           <article class="service-card reveal" data-delay="40">
-            <div class="service-num">03</div>
-            <h3>Adequação de layout</h3>
-            <p>Organização e redistribuição dos espaços para melhorar a circulação, o aproveitamento da loja e a exposição dos produtos.</p>
-          </article>
-          <article class="service-card reveal" data-delay="100">
-            <div class="service-num">04</div>
-            <h3>Montagem e desmontagem de gôndolas</h3>
-            <p>Execução profissional de montagem, desmontagem e reposicionamento de estruturas para supermercados e atacadistas.</p>
-          </article>
-          <article class="service-card reveal" data-delay="160">
-              <div class="service-num">05</div>
-            <h3>Higienização de carrinhos</h3>
-            <p>Higienização profissional para manter os carrinhos limpos, seguros e adequados para o uso dos clientes.</p>
-          </article>
-          <article class="service-card service-card--placeholder reveal" data-delay="80">
-            <div class="service-num">06</div>
-            <span class="badge-pending">Em definição</span>
-            <h3>Higienização de profissionais</h3>
-            <p>Nome e escopo deste serviço a confirmar antes da publicação final. Conteúdo placeholder — detalhes serão atualizados.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- BENEFÍCIOS -->
-    <section class="section benefits" id="beneficios">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow"><span class="gold-line"></span> Benefícios</p>
-          <h2>Seu carrinho sempre funcionando com <span class="text-blue">qualidade</span>.</h2>
-        </div>
-        <ul class="benefits-grid">
-          <li class="benefit-item reveal" data-delay="40"><span class="benefit-dot"></span>Serviço especializado</li>
-          <li class="benefit-item reveal" data-delay="80"><span class="benefit-dot"></span>Redução de custos</li>
-          <li class="benefit-item reveal" data-delay="120"><span class="benefit-dot"></span>Manutenção preventiva</li>
-          <li class="benefit-item reveal" data-delay="40"><span class="benefit-dot"></span>Mais segurança</li>
-          <li class="benefit-item reveal" data-delay="80"><span class="benefit-dot"></span>Melhor experiência para o cliente</li>
-          <li class="benefit-item benefit-item--wide reveal" data-delay="120"><span class="benefit-dot gold"></span>Atendimento para supermercados e atacadistas</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- GESTORES -->
-    <section class="section managers" id="gestores">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow"><span class="gold-line"></span> Para quem decide a operação</p>
-          <h2>Menos problemas na operação. Mais eficiência para sua loja.</h2>
-          <p class="section-sub">
-            Carrinhos danificados, rodas travadas e layouts mal planejados impactam diretamente a experiência dos clientes e a rotina dos funcionários. A RS Layout & Solicitações em Carrinhos oferece soluções práticas para manter toda a estrutura do supermercado funcionando corretamente.
-          </p>
-        </div>
-        <div class="manager-grid">
-          <article class="manager-card reveal">
-            <div class="manager-icon" aria-hidden="true">
-              <svg viewBox="0 0 64 64" fill="none"><path d="M14 42h36M20 42V22l12-8 12 8v20" stroke="url(#g1)" stroke-width="2.5" stroke-linejoin="round"/><path d="M28 42v-10h8v10" stroke="url(#g1)" stroke-width="2.5"/><defs><linearGradient id="g1" x1="14" y1="14" x2="50" y2="42"><stop stop-color="#3BA0FF"/><stop offset="1" stop-color="#C9CED6"/></linearGradient></defs></svg>
+            <div class="service-media">
+              <img src="img/galeria-gondola.jpg" alt="Montagem de gôndolas" loading="lazy" width="400" height="260" />
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
             </div>
-            <h3>Redução de custos</h3>
-            <p>Evite a substituição precoce dos equipamentos.</p>
+            <h3>Montagem de Gôndolas</h3>
+            <p>Montagem profissional de gôndolas para otimizar e valorizar seu espaço.</p>
+            <a class="service-link" href="#contato">Saiba mais <span aria-hidden="true">→</span></a>
           </article>
-          <article class="manager-card reveal" data-delay="80">
-            <div class="manager-icon" aria-hidden="true">
-              <svg viewBox="0 0 64 64" fill="none"><path d="M32 12l18 8v14c0 12-8 20-18 24-10-4-18-12-18-24V20l18-8z" stroke="url(#g2)" stroke-width="2.5" stroke-linejoin="round"/><path d="M24 32l6 6 10-12" stroke="url(#g2)" stroke-width="2.5" stroke-linecap="round"/><defs><linearGradient id="g2" x1="14" y1="12" x2="50" y2="50"><stop stop-color="#3BA0FF"/><stop offset="1" stop-color="#C9CED6"/></linearGradient></defs></svg>
+
+          <article class="service-card reveal" data-delay="80">
+            <div class="service-media">
+              <img src="img/galeria-pecas.jpg" alt="Desmontagem de gôndolas e estruturas" loading="lazy" width="400" height="260" />
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 8h12M8 12h8M10 16h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
             </div>
-            <h3>Segurança operacional</h3>
-            <p>Reduza riscos para clientes e colaboradores.</p>
-          </article>
-          <article class="manager-card reveal" data-delay="160">
-            <div class="manager-icon" aria-hidden="true">
-              <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="18" stroke="url(#g3)" stroke-width="2.5"/><path d="M22 34c3 6 17 6 20 0" stroke="url(#g3)" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="28" r="2" fill="#3BA0FF"/><circle cx="40" cy="28" r="2" fill="#C9CED6"/><defs><linearGradient id="g3" x1="14" y1="14" x2="50" y2="50"><stop stop-color="#3BA0FF"/><stop offset="1" stop-color="#C9CED6"/></linearGradient></defs></svg>
-            </div>
-            <h3>Melhor experiência</h3>
-            <p>Ofereça carrinhos funcionando e ambientes mais organizados.</p>
+            <h3>Desmontagem de Gôndolas</h3>
+            <p>Desmontagem segura e ágil com equipe especializada.</p>
+            <a class="service-link" href="#contato">Saiba mais <span aria-hidden="true">→</span></a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- GALERIA -->
-    <section class="section gallery" id="galeria">
+    <!-- PROCESSO -->
+    <section class="section process" id="processo">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow"><span class="gold-line"></span> Galeria operacional</p>
-          <h2>Resultados no chão de loja</h2>
-          <p class="section-sub">Antes e depois, troca de rodízios, reparos, montagem de gôndolas e adequação de layout.</p>
+        <div class="section-head center reveal">
+          <p class="section-label">Como trabalhamos</p>
+          <h2>Nosso processo em <span class="text-red">4</span> etapas simples</h2>
         </div>
-        <div class="gallery-grid">
-          <figure class="gallery-item reveal">
-            <img src="img/galeria-antes-depois.jpg" alt="Comparativo de carrinhos antes e depois da manutenção" loading="lazy" width="600" height="400" />
-            <figcaption>Antes e depois</figcaption>
-          </figure>
-          <figure class="gallery-item reveal" data-delay="60">
-            <img src="img/galeria-rodizio.jpg" alt="Troca de rodízios em carrinho de supermercado" loading="lazy" width="600" height="400" />
-            <figcaption>Troca de rodízios</figcaption>
-          </figure>
-          <figure class="gallery-item reveal" data-delay="120">
-            <img src="img/galeria-manutencao.jpg" alt="Carrinho em manutenção com peças e ferramentas" loading="lazy" width="600" height="400" />
-            <figcaption>Carrinhos em manutenção</figcaption>
-          </figure>
-          <figure class="gallery-item reveal" data-delay="40">
-            <img src="img/galeria-gondola.jpg" alt="Montagem de gôndolas em supermercado" loading="lazy" width="600" height="400" />
-            <figcaption>Montagem de gôndolas</figcaption>
-          </figure>
-          <figure class="gallery-item reveal" data-delay="100">
-            <img src="img/galeria-layout.jpg" alt="Adequação de layout e organização da loja" loading="lazy" width="600" height="400" />
-            <figcaption>Adequação de layout</figcaption>
-          </figure>
-          <figure class="gallery-item reveal" data-delay="160">
-            <img src="img/galeria-pecas.jpg" alt="Estruturas e peças metálicas para supermercado" loading="lazy" width="600" height="400" />
-            <figcaption>Peças e estruturas</figcaption>
-          </figure>
-        </div>
+        <ol class="process-grid">
+          <li class="process-card reveal">
+            <span class="process-num">01</span>
+            <h3>Solicitação</h3>
+            <p>Você entra em contato e descreve a necessidade da loja ou do centro de distribuição.</p>
+          </li>
+          <li class="process-card reveal" data-delay="60">
+            <span class="process-num">02</span>
+            <h3>Avaliação técnica</h3>
+            <p>Analisamos o cenário, alinhamos o escopo e apresentamos a proposta de atendimento.</p>
+          </li>
+          <li class="process-card reveal" data-delay="120">
+            <span class="process-num">03</span>
+            <h3>Execução</h3>
+            <p>Nossa equipe realiza a manutenção, montagem ou adequação com foco em prazo e qualidade.</p>
+          </li>
+          <li class="process-card reveal" data-delay="180">
+            <span class="process-num">04</span>
+            <h3>Entrega</h3>
+            <p>Conferimos o resultado e deixamos a operação pronta para seguir com segurança e eficiência.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- CTA FINAL -->
+    <!-- CONTATO -->
     <section class="section cta" id="contato">
       <div class="container">
         <div class="cta-panel reveal">
           <div class="cta-copy">
-            <p class="eyebrow"><span class="gold-line"></span> Fale com a RS Layout & Solicitações em Carrinhos</p>
-            <h2>Não espere o problema gerar <span class="text-gold">prejuízo</span>.</h2>
+            <p class="section-label">Contato</p>
+            <h2>Pronto para solicitar seu <span class="text-red">orçamento</span>?</h2>
             <p>
-              Solicite uma avaliação e mantenha os carrinhos e a estrutura da sua loja funcionando corretamente.
+              Fale com a RS Layout e mantenha carrinhos, gôndolas e o layout da sua loja funcionando com qualidade.
             </p>
           </div>
           <div class="cta-actions">
@@ -284,9 +309,9 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="img/logo.webp" alt="RS Layout & Solicitações em Carrinhos" width="56" height="56" />
+        <img src="img/logo.webp" alt="RS Layout" width="48" height="48" />
         <div>
-          <strong>RS Layout</strong>
+          <strong>RS Layout &amp; Soluções</strong>
           <p>Soluções em carrinhos para supermercados e atacadistas.</p>
         </div>
       </div>
