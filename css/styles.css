@@ -179,9 +179,11 @@ h3 {
   justify-content: flex-start;
 }
 
-.btn-whatsapp svg {
-  color: #25d366;
+.btn-whatsapp .wa-icon {
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
+  display: block;
 }
 
 .btn-whatsapp:hover {
